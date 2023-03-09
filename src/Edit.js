@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useOutletContext, useParams, useNavigate } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 import DateTimeP from 'react-datetime-picker';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
