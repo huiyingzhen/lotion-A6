@@ -1,0 +1,153 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+
+body,
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-family: inherit;
+  cursor: pointer;
+}
+button:hover {
+  background: pink;
+}
+
+.App {
+  display: flex;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ddd;
+  border-top: 3px solid pink;
+}
+
+#menu{
+  display: flex;
+  align-items: center;
+}
+
+#title{
+  line-height: 1px;
+  text-align: center;
+  flex-grow: 1;
+}
+.main{
+  display: flex;
+}
+/* SIDEBAR STYLES */
+
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+#sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 2px;
+  border-bottom: 1px solid #ddd;
+}
+.sidebar-header h1 {
+  margin: 0;
+}
+
+.sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+.sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.note-title-side {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.sidebar-note p {
+  margin: 10px 0;
+  text-decoration: none;
+}
+.sidebar-note small {
+  display: block;
+  color: #999;
+}
+
+.sidebar-note:hover {
+  background: #ddd;
+}
+
+.sidebar-note.active {
+  background: pink;
+  color: black;
+  text-decoration: none;
+}
+
+/* NOTE EDITOR/PREVIEW (MAIN) STYLES */
+
+.main-notes {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-header {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  line-height: 2px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left input{
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.header-right{
+  display: flex;
+  column-gap: 3em;
+}
+
+.header-title{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.main-note{
+  margin-left: 20px;
+}
+
+
+
